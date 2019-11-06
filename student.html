@@ -1,0 +1,123 @@
+<html>
+<head>
+<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+<form action="#" name="StudentRegistration" onsubmit="return(validate());">
+
+<table cellpadding="2" width="20%" bgcolor="#fbf7f5" align="center"
+cellspacing="2">
+
+<tr>
+<td colspan=2>
+<center>
+    <font size=4><b>Student Registration Form</b></font></center>
+</td>
+</tr>
+
+<tr>
+    <td>Name</td>
+    <td><input type=text name="textnames" id="textname" size="30"></td>
+    <span id="nam" ></span>
+</tr>
+
+<tr>
+    <td>Roll Number</td>
+    <td><input type="text" name="rollno" id="rollno" onkeypress="return isNumberKey(event)" size="30"></td>
+</tr>
+
+<tr>
+    <td>Password</td>
+    <td><input type="password" name="pass" id="pass" size="30"></td>
+</tr>
+
+<tr>
+<td>Personal Address</td>
+<td><textarea rows="4" cols="30">
+        Type the address
+        </textarea></td>
+</tr>
+
+<tr>
+    <td>Hobbies</td>
+    <td>
+         <input type="checkbox" name="hobby" value="sports" id="sport">
+        <label for="sport">Sports</label>
+        <input type="checkbox" name="hobby" value="music" id="music">
+        <label for="music">Music</label>
+        <input type="checkbox" name="hobby" value="reading" id="read">
+        <label for="read">Reading</label>
+    </td>
+</tr>
+
+<tr>
+<td>Sex</td>
+<td>
+    <input type="radio" name="msex" value="male" size="10">Male
+    <input type="radio" name="fsex" value="Female" size="10">Female
+</td>
+</tr>
+
+
+<tr>
+<td>City</td>
+<td><select name="City">
+<option value="-1" selected>select..</option>
+<option value="New Delhi">NEW DELHI</option>
+<option value="Mumbai">MUMBAI</option>
+<option value="Goa">GOA</option>
+<option value="Pune">PUNE</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td><select name="Course" multiple>
+<option value="-1" selected>select..</option>
+<option value="B.Tech">B.TECH</option>
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="BCA">BCA</option>
+</select></td>
+</tr>
+
+
+<tr>
+    <td>Designation</td>
+    <td><select name="designation">
+    <option value="-1" selected>select..</option>
+    <option value="CEO">CEO</option>
+    <option value="CFO">CFO</option>
+    <option value="Senior">Senior Developer</option>
+    <option value="Junior">Junior Developer</option>
+    </select></td>
+ </tr>
+
+
+
+
+
+
+
+
+<tr>
+    <td>MobileNo</td>
+    <td><input type="text" name="mobilno" pattern="[7-9]{1}[0-9]{9}" 
+
+        title="Phone number with 7-9 and remaing 9 digit with 0-9"></td>
+    
+</tr>
+
+<tr>
+    <td>Upload</td>
+    <td>Select a file: <input type="file" name="myFile"><br><br></td>
+</tr>
+
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="submit" value="Submit Form" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
